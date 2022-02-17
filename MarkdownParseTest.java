@@ -40,5 +40,53 @@ public class MarkdownParseTest {
         assertEquals(List.of(), MarkdownParse.getLinks(contents));
     }
 
+    @Test
+    public void testBreakFile4() throws IOException {
+        Path fileName = Path.of("break4.md");
+        String contents = Files.readString(fileName);
+        assertEquals(List.of(), MarkdownParse.getLinks(contents));
+    }
+
+    @Test
+    public void testBreakFile5() throws IOException {
+        Path fileName = Path.of("break5.md");
+        String contents = Files.readString(fileName);
+        assertEquals(List.of(), MarkdownParse.getLinks(contents));
+    }
+
+    @Test
+    public void testBreakFile6() throws IOException {
+        Path fileName = Path.of("break6.md");
+        String contents = Files.readString(fileName);
+        assertEquals(List.of(), MarkdownParse.getLinks(contents));
+    }
+
+    @Test
+    public void testBreakFile7() throws IOException {
+        Path fileName = Path.of("break7.md");
+        String contents = Files.readString(fileName);
+        assertEquals(List.of(), MarkdownParse.getLinks(contents));
+    }
+
+    @Test
+    public void testBreakFile8() throws IOException {
+        Path fileName = Path.of("break8.md");
+        String contents = Files.readString(fileName);
+        assertEquals(List.of(), MarkdownParse.getLinks(contents));
+    }
+
+    @Test
+    public void testBreakFile9() throws IOException {
+        Path fileName = Path.of("break9.md");
+        String contents = Files.readString(fileName);
+        assertEquals(List.of(), MarkdownParse.getLinks(contents));
+    }
+
+    @Test
+    public void testBreakFile10() throws IOException {
+        Path fileName = Path.of("break10.md");
+        String contents = Files.readString(fileName);
+        assertEquals(List.of(), MarkdownParse.getLinks(contents));
+    }
     
 }
