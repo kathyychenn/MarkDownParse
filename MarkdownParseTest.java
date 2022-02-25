@@ -3,6 +3,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.List;
+import java.util.ArrayList;
 
 import org.junit.*;
 
@@ -41,52 +42,27 @@ public class MarkdownParseTest {
     }
 
     @Test
-    public void testBreakFile4() throws IOException {
-        Path fileName = Path.of("break4.md");
+    public void snippet1Test() throws IOException{
+        Path fileName = Path.of("snippet1.md");
         String contents = Files.readString(fileName);
-        assertEquals(List.of(), MarkdownParse.getLinks(contents));
+        ArrayList<String> links = MarkdownParse.getLinks(contents);
+        assertEquals(List.of(), links);
     }
 
     @Test
-    public void testBreakFile5() throws IOException {
-        Path fileName = Path.of("break5.md");
+    public void snippet2Test() throws IOException{
+        Path fileName = Path.of("snippet2.md");
         String contents = Files.readString(fileName);
-        assertEquals(List.of(), MarkdownParse.getLinks(contents));
+        ArrayList<String> links = MarkdownParse.getLinks(contents);
+        assertEquals(List.of(), links);
     }
-
+    
     @Test
-    public void testBreakFile6() throws IOException {
-        Path fileName = Path.of("break6.md");
+    public void snippet3Test() throws IOException{
+        Path fileName = Path.of("snippet3.md");
         String contents = Files.readString(fileName);
-        assertEquals(List.of(), MarkdownParse.getLinks(contents));
-    }
-
-    @Test
-    public void testBreakFile7() throws IOException {
-        Path fileName = Path.of("break7.md");
-        String contents = Files.readString(fileName);
-        assertEquals(List.of(), MarkdownParse.getLinks(contents));
-    }
-
-    @Test
-    public void testBreakFile8() throws IOException {
-        Path fileName = Path.of("break8.md");
-        String contents = Files.readString(fileName);
-        assertEquals(List.of(), MarkdownParse.getLinks(contents));
-    }
-
-    @Test
-    public void testBreakFile9() throws IOException {
-        Path fileName = Path.of("break9.md");
-        String contents = Files.readString(fileName);
-        assertEquals(List.of(), MarkdownParse.getLinks(contents));
-    }
-
-    @Test
-    public void testBreakFile10() throws IOException {
-        Path fileName = Path.of("break10.md");
-        String contents = Files.readString(fileName);
-        assertEquals(List.of(), MarkdownParse.getLinks(contents));
+        ArrayList<String> links = MarkdownParse.getLinks(contents);
+        assertEquals(List.of(), links);
     }
     
 }
